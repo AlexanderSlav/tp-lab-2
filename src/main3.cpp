@@ -17,11 +17,6 @@ char* change(char* val)
 	return val;
 }
 
-template <typename T, size_t n>
-void map(T(&a)[n], T(*change)(T)) {
-	for (int i = 0; i < n; i++) a[i] = change(a[i]);
-}
-
 int main() {
 	const size_t n = 5;
 	int arr1[n]{ 1, 2, 3, 4, 5 };
