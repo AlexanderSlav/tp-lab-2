@@ -1,6 +1,6 @@
 #include "task3.h"
 #include <iostream>
-using namespace std;
+using namespace std
 template<class T>
 T change(T val)
 {
