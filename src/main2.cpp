@@ -1,5 +1,6 @@
 #include "task2.h"
 #include <iostream>
+#imclude <cstring>
 using namespace std;
 template<class T>
 T gen()
