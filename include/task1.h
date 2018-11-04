@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 template <typename T>
 bool cmp(T a, T b) {
 	if (a < b) return true;
