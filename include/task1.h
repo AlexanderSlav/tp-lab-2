@@ -73,7 +73,7 @@ template <typename T>
 
 //iterational algorithm for merging
 
-void sort(T *arr, int n) {
+void msort(T *arr, int n) {
 	for (int i = 1; i < n ; i = i*2)
 		for (int j = 0; j < n - i; j = j+ 2 * i)
 			merge(arr, j, j + i, min(j + 2 * i, n));
