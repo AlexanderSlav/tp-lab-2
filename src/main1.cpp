@@ -10,9 +10,9 @@ int main()
 	double val2[n] = { 4.0, 3.0, 2.4, 2.5, 2.1, -1 };
 	char* val3[n] = { (char*)"ffff", (char*)"fff2", (char*)"f", (char*)"ff", (char*)"vvv", (char*)"fffrr" };
 
-	sort(val1, n);
-	sort(val2, n);
-	sort(val3, n);
+	msort(val1, n);
+	msort(val2, n);
+	msort(val3, n);
 	
 	for (int i = 0; i < n; i++) cout << val1[i] << " ";
 	cout << endl;
