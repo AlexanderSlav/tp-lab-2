@@ -4,6 +4,14 @@
 
 using namespace std;
 
+int minim(int a, int b)
+{
+	if (a < b)
+		return a;
+	else
+		return b;
+}
+
 //compare function for all data types
 
 template <typename T>
@@ -76,5 +84,5 @@ template <typename T>
 void msort(T *arr, int n) {
 	for (int i = 1; i < n ; i = i*2)
 		for (int j = 0; j < n - i; j = j+ 2 * i)
-			merge(arr, j, j + i, min(j + 2 * i, n));
+			merge(arr, j, j + i, minim(j + 2 * i, n));
 }
