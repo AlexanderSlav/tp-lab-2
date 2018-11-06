@@ -31,7 +31,7 @@ void merge(T *arr, int lbound, int middle, int rbound)
 
 	// merging 2 sections of mass while  one of them is not empty
 	while (lbound + k1 < middle && middle + k2 < rbound) {
-		if (cmp(arr[lbound + k1], arr[middle + k2]))
+		if (cmp(arr[lbound + k1], arr[middle + k2])) 
 		{
 			temp[k1 + k2] = arr[lbound + k1];
 			k1++; 
