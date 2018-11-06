@@ -1,7 +1,7 @@
 #include <iostream>
 #pragma once
-#ifndef TASK3_H
-#define TASK3_H
+#ifndef TASK_3_H
+#define TASK3__H
 template<class T>
 T change2(T val)
 {

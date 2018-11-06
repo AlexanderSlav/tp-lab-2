@@ -2,11 +2,11 @@
 #ifndef TASK_1_H
 #define TASK_1_H
 template<typename T>
-void merge(T merged[], int lenD, T L[], int lenL, T R[], int lenR) {
+void merge(T merged[], int n, T L[], int leftLen, T R[], int rightLen) {
 	int i = 0;
 	int j = 0;
-	while (i < lenL || j < lenR) {
-		if (i < lenL & j < lenR) {
+	while (i < leftLen || j < rightLen) {
+		if (i < leftLen & j < rightLen) {
 			if (L[i] <= R[j]) {
 				merged[i + j] = L[i];
 				i++;
@@ -16,22 +16,22 @@ void merge(T merged[], int lenD, T L[], int lenL, T R[], int lenR) {
 				j++;
 			}
 		}
-		else if (i < lenL) {
+		else if (i < leftLen) {
 			merged[i + j] = L[i];
 			i++;
 		}
-		else if (j < lenR) {
+		else if (j < rightLen) {
 			merged[i + j] = R[j];
 			j++;
 		}
 	}
 }
 template<>
-void merge(char* merged[], int lenD, char* L[], int lenL, char* R[], int lenR) {
+void merge(char* merged[], int n, char* L[], int leftLen, char* R[], int rightLen) {
 	int i = 0;
 	int j = 0;
-	while (i < lenL || j < lenR) {
-		if (i < lenL & j < lenR) {
+	while (i < leftLen || j < rightLen) {
+		if (i < leftLen & j < rightLen) {
 			if (strlen(L[i]) <= strlen(R[j])) {
 				merged[i + j] = L[i];
 				i++;
@@ -41,11 +41,11 @@ void merge(char* merged[], int lenD, char* L[], int lenL, char* R[], int lenR) {
 				j++;
 			}
 		}
-		else if (i < lenL) {
+		else if (i < leftLen) {
 			merged[i + j] = L[i];
 			i++;
 		}
-		else if (j < lenR) {
+		else if (j < rightLen) {
 			merged[i + j] = R[j];
 			j++;
 		}

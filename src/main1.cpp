@@ -5,14 +5,10 @@ int main()
 {
 	const size_t n = 6;
 	int *val1 = new int[n] {5, 3, 2, 4, 1, 6};
-	
 	char* val2[n]{ (char*)"ffff", (char*)"fff2", (char*)"f", (char*)"ff", (char*)"vvv", (char*)"fffrr" };
-	
 		msort(val1,n);
 		msort(val2,n);
-
 		cout << "Arrays after sorting:\n" << endl;
-
 		for (int i = 0; i < n; i++)     
 		{
 			cout << val1[i] << " ";

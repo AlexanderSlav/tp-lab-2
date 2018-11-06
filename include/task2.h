@@ -1,5 +1,5 @@
-#ifndef TASK2_H
-#define TASK2_H
+#ifndef TASK_2_H
+#define TASK_2_H
 #include <iostream>
 using namespace std;
 
