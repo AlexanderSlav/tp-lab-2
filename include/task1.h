@@ -1,6 +1,7 @@
-#include <iostream>
 #ifndef TASK_1_H
 #define TASK_1_H
+#include<iostream>
+#include <cstring>
 template<typename T>
 void merge(T merged[], int n, T L[], int leftLen, T R[], int rightLen) {
 	int i = 0;
