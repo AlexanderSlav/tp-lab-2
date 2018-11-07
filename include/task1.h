@@ -32,7 +32,7 @@ void merge(char* merged[], int n, char* L[], int leftLen, char* R[], int rightLe
 	int j = 0;
 	while (i < leftLen || j < rightLen) {
 		if (i < leftLen & j < rightLen) {
-			if (strlen(L[i]) <= strlen(R[j])) {
+			if (strlen(L[i]) < strlen(R[j])) {
 				merged[i + j] = L[i];
 				i++;
 			}
