@@ -58,8 +58,8 @@ void msort(T *a, int n)
 	{
 		int mid = n / 2;
 		int rend = n - mid;
-		int* L = new int[mid];
-		int* R = new int[rend];
+		T* L = new T[mid];
+		T* R = new T[rend];
 		for (int i = 0; i < n; i++) {
 			if (i < mid) {
 				L[i] = a[i];
