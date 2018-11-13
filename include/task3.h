@@ -1,3 +1,4 @@
+#include <cstddef>
 template <class T, size_t N>
 void map(T arr[], T(*change)(T))
 {
