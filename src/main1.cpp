@@ -1,3 +1,4 @@
+#include "test1.h"
 int main()
 {
 	int N1 = 6;
