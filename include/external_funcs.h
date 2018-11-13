@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cstring>
+using namespace std;
 
 	/*=====[Функция вывода на экран для удобства]=====*/
 	template <typename T>
