@@ -1,3 +1,5 @@
+#include <iostream>
+#include <task2.h>
 template<class T>
 T gen()
 {

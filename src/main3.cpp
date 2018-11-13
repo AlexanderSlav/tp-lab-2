@@ -1,3 +1,5 @@
+#include <iostream>
+#include <task3.h>
 template<class T>
 T change(T val)
 {
