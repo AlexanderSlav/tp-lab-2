@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <string.h>
 using namespace std;
 template <typename S>
 bool cmp(S a,S b) {
