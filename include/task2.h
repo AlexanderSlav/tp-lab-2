@@ -1,3 +1,4 @@
+#include <cstddef>
 template <class T, int N>
 T* createArr(T(*gen)()) {
 	T* tmp = new T[N];
