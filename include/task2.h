@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-template<class T>
-
 template<typename T, const size_t N>
 T* createArr(T(*f)()) {
 	T* ptr = new T[N];
