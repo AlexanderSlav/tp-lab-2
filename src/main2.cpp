@@ -10,6 +10,7 @@ int main()
 	cout << '\n';
 	ptrC = createArr<char*, n>(gen);
 	for (int i = 0; i < n; i++) cout << *(ptrC+i) << ' ';
+	cout << '\n';
 	system("pause");
 	return 0;
 }
