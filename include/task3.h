@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 template <typename T,const size_t n>
 void map(T arr[], T(*f)(T)) {
