@@ -13,7 +13,7 @@ template<>
 			val[i] = val[i] + 1;
 		return val;
 	}
-}
+
 int main()
 {
 	setlocale(LC_ALL, "rus");
