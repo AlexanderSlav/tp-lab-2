@@ -7,7 +7,7 @@ template<typename T, int N>
 T* createArr(T (*gen)())
 {
 	T* mas = new T[N]; 
-	for (auto i = 0; i < N; i++)
+	for (int i = 0; i < N; i++)
 	{
 		mas[i] = gen(); 
 	}
