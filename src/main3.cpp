@@ -12,7 +12,7 @@ int main()
 	int arr[n]{ 1, 2, 3, 4, 5 };
 
 	map<int, n>(arr, change);
-	for (auto i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << " ";
 	}
