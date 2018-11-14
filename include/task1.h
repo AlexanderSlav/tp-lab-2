@@ -81,9 +81,9 @@ template<class T>
 
 void msort(T arr[], int n)
 {
-	for (auto i = 1; i <= n; i *= 2)
+	for (int i = 1; i <= n; i *= 2)
 	{
-		for (auto j = 0; j <= n - i; j += (2 * i))
+		for (int j = 0; j <= n - i; j += (2 * i))
 		{
 			int right = (j + 2 * i) < n ? (j + 2 * i) : n;
 			merge(arr, j, j + i, right);
