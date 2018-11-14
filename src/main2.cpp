@@ -12,7 +12,7 @@ int main()
 	const int N = 11;
 	int* Arr;
 	Arr = createArr<int, N>(gen);
-	for (auto i = 0; i < N; i++)
+	for (int i = 0; i < N; i++)
 	{
 		cout << Arr[i] << "";
 
