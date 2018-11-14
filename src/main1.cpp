@@ -6,7 +6,7 @@ int main()
 	int *arr = new int[n] {5, 3, 2, 4, 1};
 	const int n2 = 8;
 	msort(arr, n);
-	for (auto i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << " ";
 	}
