@@ -13,7 +13,7 @@ char* gen(){
 	t++;
 	char* s = new char[t + 1];
 
-	for (size_t i = 0; i < t; i++)
+	for (int i = 0; i < t; i++)
 		s[i] = '0' + i;
 	s[t] = '\0';
 	return s;
