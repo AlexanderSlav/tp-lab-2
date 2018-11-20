@@ -11,7 +11,7 @@ template<>
 char* change(char* val)
 {
 	size_t n = strlen(val);
-	for (size_t i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)
 		val[i] = val[i] + 1;
 	return val;
 }
