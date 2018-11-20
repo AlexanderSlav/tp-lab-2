@@ -1,6 +1,7 @@
 
 #include "task2.h"
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 template<class T>
