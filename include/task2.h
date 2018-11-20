@@ -1,5 +1,5 @@
-
 #pragma once
+#include <cstring>
 
 template <class T, size_t n>
 T * createArr(T(*gen)()) {
