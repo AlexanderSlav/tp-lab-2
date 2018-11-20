@@ -11,13 +11,13 @@ int main()
 		char *arr2;
 		char **arr3;
 		arr1 =createArr<int, n>(gen);
-		for (size_t i = 0; i < n; i++){
+		for (int i = 0; i < n; i++){
 			cout << arr1[i]<<"  ";
 		}
 		cout << endl;
 
 		arr2 = createArr<char, n>(gen);
-		for (size_t i = 0; i < n; i++){
+		for (int i = 0; i < n; i++){
 			cout << arr2[i] << "  ";
 		}
 		cout << endl;
