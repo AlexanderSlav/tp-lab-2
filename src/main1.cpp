@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstring>
+#include <cstddef>
 #include "task1.h"
 using namespace std;
 
