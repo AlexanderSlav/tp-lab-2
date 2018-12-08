@@ -13,13 +13,13 @@ bool cmp(char * a, char* b) {
 }
 
 template<class T>
-void merge(T * arr, size_t size) {
+void msort(T * arr, size_t size) {
 	if (size > 1) {
 		size_t const left_size = size / 2;
 		size_t const right_size = size - left_size;
 		
-		merge(arr, left_size);
-		merge(arr + left_size, right_size);
+		msort(arr, left_size);
+		msort(arr + left_size, right_size);
 
 		T * buf = new T[size];
 
