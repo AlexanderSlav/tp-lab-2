@@ -67,26 +67,26 @@ void merge(char* arr[], unsigned int left_size, unsigned int right_size) {
 }*/
 
 template <typename T>
-void merge_sort(T arr[], unsigned int size) {
+void msort(T arr[], unsigned int size) {
 	if (size <= 1) return;
 	unsigned int left_size = size / 2;
 	unsigned int right_size = size - left_size;
-	merge_sort(&arr[0], left_size);
-	merge_sort(&arr[left_size], right_size);
+	msort(&arr[0], left_size);
+	msort(&arr[left_size], right_size);
 	merge(&arr[0], left_size, right_size);
 }
 
 /*template<>
-void merge_sort(char* arr[], unsigned int size) {
+void msort(char* arr[], unsigned int size) {
 	if (size <= 1) return;
 	unsigned int left_size = size / 2;
 	unsigned int right_size = size - left_size;
-	merge_sort(&arr[0], left_size);
-	merge_sort(&arr[left_size], right_size);
+	msort(&arr[0], left_size);
+	msort(&arr[left_size], right_size);
 	merge(&arr[0], left_size, right_size);
 }*/
 
 /*template<>
-void merge_sort(char* arr[], unsigned int size) {
+void msort(char* arr[], unsigned int size) {
 	cout << arr[2];
 }*/
