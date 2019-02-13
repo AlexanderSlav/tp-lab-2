@@ -1,4 +1,4 @@
-#include "task1.h"
+#include "../include/task2.h"
 
 template <typename T>
 T gen(/*T key*/) {
