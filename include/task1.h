@@ -63,7 +63,10 @@ void msort(T* array, size_t size)
             ridx++;
         }
     }
-    std::copy(tmp, &tmp[size], array);
+    for(size_t i(0); i < size ;++i)
+    {
+        array[i] = tmp[i];
+    }
     delete[] tmp;
 }
 
