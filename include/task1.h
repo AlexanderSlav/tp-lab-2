@@ -1,4 +1,4 @@
-//
+    //
 // Created by Александр Славутин on 2019-03-12.
 //
 #pragma once
@@ -40,32 +40,33 @@ void msort(T* array, size_t size)
         {
             if (compare(array[lidx], array[ridx])) // The value from the left half is bigger
             {
-                tmp[idx++] = array[lidx];
+                tmp[idx++] = std::move(array[lidx]);
                 lidx++;
             }
 
             else
             {
-                tmp[idx++] = array[ridx];
+                tmp[idx++] = std::move(array[ridx]);
                 ridx++;
             }
         }
 
         else if (lidx < size / 2) // Values remain only in the left half
         {
-            tmp[idx++] = array[lidx];
+            tmp[idx++] = std::move(array[lidx]);
             lidx++;
         }
 
         else
         {
-            tmp[idx++] = array[ridx];
+            tmp[idx++] = std::move(array[ridx]);
             ridx++;
         }
     }
 
-    for (size_t i(0); i < size; i++)
-        array[i] = tmp[i];
+
+    std::copy(tmp ,&tmp[size] ,array);
+
 
     delete[] tmp;
 }
