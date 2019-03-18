@@ -2,7 +2,16 @@
 // Created by Александр Славутин on 2019-03-12.
 //
 
-#ifndef TASK1_TASK3_H
-#define TASK1_TASK3_H
+#pragma once
+#include <cstring>
+//#include <cstddef>
 
-#endif //TASK1_TASK3_H
+
+
+template <typename T, size_t size>
+
+void map(T (&arr)[size], T (*change)(T)){
+    for (size_t i(0); i < size ; ++i) {
+         arr[i] = change(arr[i]);
+    }
+}

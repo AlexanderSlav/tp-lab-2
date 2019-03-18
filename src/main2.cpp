@@ -32,22 +32,22 @@ char* gen()
 int main()
 {
     const size_t size = 10;
-    int* array1;
-    array1 = createArr <int, size> (gen);
+    int* first_array;
+    first_array = createArr <int, size> (gen);
     for (auto i(0); i < size; i++)
     {
-        std::cout << array1[i] << ' ';
+        std::cout << first_array[i] << ' ';
     }
-    delete[] array1;
+    std::cout<< std::endl;
+    delete[] first_array;
 
-    char* array2;
-    array2 = createArr <char, size> (gen);
-    std::cout << std::endl;
+    char** second_array;
+    second_array = createArr <char*, size> (gen);
     for (auto i(0); i < size; i++)
     {
-        std::cout << array2[i] << ' ';
+        std::cout << second_array[i] << ' ';
     }
-    delete[] array2;
+    delete[] second_array;
 
     return 0;
 }
