@@ -47,6 +47,9 @@ int main()
     {
         std::cout << second_array[i] << ' ';
     }
+    for(size_t i = 0; i < size; ++i)
+        delete[] second_array[i];
+    
     delete[] second_array;
 
     return 0;
