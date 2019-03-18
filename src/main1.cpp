@@ -2,6 +2,7 @@
 // Created by Александр Славутин on 2019-03-12.
 //
 #include "task1.h"
+#include <iostream>
 
 int main(){
     const size_t size = 8 ;
