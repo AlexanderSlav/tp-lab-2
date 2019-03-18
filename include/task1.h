@@ -68,16 +68,9 @@ void msort(T* array, size_t size)
     for(auto i(0); i < size ; i++ ){
         std::cout << array[i] << " ";
     }
-    std::cout<< "|"; // before sort for one iteration (just for clear)
 
 
     std::copy(tmp, &tmp[size], array);
-
-    for(auto i(0); i < size ; i++ ){
-        std::cout << array[i] << " ";
-    }
-    std::cout<< "|"; // after sort
-
     delete[] tmp;
 }
 
